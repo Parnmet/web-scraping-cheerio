@@ -1,0 +1,39 @@
+<table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EEEEFD">
+                    <tbody><tr>
+                      <td width="10%" nowrap="" bgcolor="#C1E2F7"><strong>ประเภทพืช:</strong></td>
+                      <td width="90%" bgcolor="#FFFFFF"><select name="sel_group_plant" id="sel_group_plant" onchange="
+					url='../ajax/ajaxlist_report.php?mode=show_plant4444&amp;sel_group_plant='+this.value;  
+					load_divForm(url,'show_plant');
+             		url='../ajax/ajaxlist_report.php?mode=show_breed&amp;sel_plant=';  
+                    load_divForm(url,'show_breed');
+                    show_sel_rice('');
+                     ">
+                         <option value="" selected="">--เลือกกลุ่มพืช--</option>
+                        <option value="01">ข้าว</option><option value="02">พืชไร่</option><option value="03">พืชผัก</option><option value="06">ไม้ดอก</option><option value="07">ไม้ประดับ</option><option value="08">สมุนไพรและเครื่องเทศ (รต.01)</option>                        
+                      </select>
+                        <span id="show_plant">
+                        <select name="sel_plant" id="sel_plant" onchange="
+					show_sel_rice(this.value);
+                    show_season(this.value);">
+                          <option value="" selected="">--เลือกชนิดพืช--</option>
+                                                  </select>
+                      </span> 
+                      <span id="show_rice" style="display: none;">&nbsp;
+                       <select name="sel_rice" id="sel_rice" onchange="
+					url='../ajax/ajaxlist_report.php?mode=show_breed&amp;sel_plant='+document.getElementById('sel_plant').value+'&amp;sel_rice='+this.value; 
+					load_divForm(url,'show_breed');">
+                          <option value="" selected="">--แสดงกลุ่มข้าวทั้งหมด--</option>
+                          <option value="1">ข้าวเจ้า</option><option value="2">ข้าวเหนียว</option><option value="3">ข้าวหอมมะลิ</option><option value="4">ข้าวหอมปทุมธานี</option><option value="5">ข้าวหอมจังหวัด</option>                        </select>
+                      </span>
+                      <span id="show_breed">&nbsp;<select name="sel_breed" id="sel_breed"><option value="">--แสดงพันธุ์ทั้งหมด--</option></select></span> 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="center" nowrap="" bgcolor="#FFFFFF">
+                      <input name="Submit" type="submit" class="topdarkbluetxt" value="แสดงข้อมูล" onclick="return chkinput();">
+                      <input name="sel_unit" id="sel_unit" type="hidden" value="01">
+                      <input name="sel_level" id="sel_level" type="hidden" value="1">
+                      <input name="sel_type" id="sel_type" type="hidden" value="1">
+                      <input name="sel_year" id="sel_year" type="hidden" value="2560">
+                      </td>
+                  </tr></tbody></table>
