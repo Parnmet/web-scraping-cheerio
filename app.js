@@ -1,39 +1,22 @@
-const cheerio = require('cheerio')
-var fs = require('fs');
-const $ = cheerio.load(fs.readFileSync('html/ID6-ORGANICDOA.html'))
+var express = require('express')
+var cheerio = require('./myjsonfile.json')
+var app = express()
 
-//Iterate select name
-// const parent_list = []
-// $('select').each((i, elem) => {
-//     parent_list[i] = $(elem).attr('name')
-// })
-// parent_list.join(', ')
-// console.log(parent_list)
 
-//Iterate option and value
-const parent_list = []
-const parent_value_list = []
-$('[name=status_garden]').children().each((i, elem) => {
-    parent_list[i] = $(elem).text()
-    parent_value_list[i] = $(elem).val()
+var name_list = []
+function prepareValue(){
+    cheerio.query_string.forEach(element => {
+        name_list.push(element.name)
+    });
+}
+prepareValue()
+console.log(name_list)
+
+// GET method route
+app.get('/cheerio', function (req, res) {
+    console.log(req.query)
+    res.send("Use name as a query string and its value as a query string' value")
 })
-parent_list.join(', ')
-console.log(parent_value_list)
 
-/*
-//Iterate whole options' text
-const option_list = [];
-$('option').each(function(i, elem) {
-    option_list[i] = $(this).text();
-});
-option_list.join(', ')
-
-//Iterate whole options' value 
-const value_list = []
-$('option').each(function(i, elem) {
-    value_list[i] = $(this).attr('value')
-});
-value_list.join(', ')
-*/
-
-// console.log(a)
+// POST method route
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
