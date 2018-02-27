@@ -3,14 +3,19 @@ const cheerioTableparser = require('cheerio-tableparser');
 const fs = require('fs');
 var filePath = 'html_result_table/test.html' 
 $ = cheerio.load(fs.readFileSync(filePath));
-cheerioTableparser($);
-//For html file.
-var data = $('table.table').parsetable(true, true, true);
+// cheerioTableparser($);
+// //For html file.
+// var data = $('table.table').parsetable(true, true, true);
+// console.log(data)
 
-fs.writeFile("test/test.csv", data, 'utf-8', function(err) {
-    if(err) {
-        return console.log(err);
-    }
-
-    console.log("The file was saved!");
-}); 
+// var csv = require('fast-csv')
+// var ws = fs.createWriteStream('my2.csv')
+// csv.write(data, {
+//     headers: true,
+//     transform: (function(data) {
+//         return data.reverse(); //reverse each row. 
+//     })
+// }).pipe(ws)
+var tableToJSON = require('tableToJSON')
+var a = $('table').tableToJSON()
+console.log(a)
