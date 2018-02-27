@@ -8,14 +8,25 @@ $ = cheerio.load(fs.readFileSync(filePath));
 // var data = $('table.table').parsetable(true, true, true);
 // console.log(data)
 
+cheerioTableparser($);
+//For html file.
+var data = $('table.table').parsetable(true, true, true);
+
+function convertRowToColumn(data){
+    var data_temp = []
+    for (i = 0; i < data[0].length; i++) {
+        data_temp[i] = []
+        for (j = 0; j < data.length; j++) {
+            data_temp[i][j] = data[j][i]
+        }
+    }
+    return data_temp
+}
+
+data2 = convertRowToColumn(data)
+
 // var csv = require('fast-csv')
 // var ws = fs.createWriteStream('my2.csv')
-// csv.write(data, {
-//     headers: true,
-//     transform: (function(data) {
-//         return data.reverse(); //reverse each row. 
-//     })
+// csv.write(data2, {
+//     headers: true
 // }).pipe(ws)
-var tableToJSON = require('tableToJSON')
-var a = $('table').tableToJSON()
-console.log(a)
