@@ -1,0 +1,196 @@
+{
+    "query_string": [
+        {
+            "name": "ctl00$ContentPlace$TYPE",
+            "type": "input",
+            "text": "ctl00$ContentPlace$TYPE",
+            "value": "rdb_t1"
+        },
+        {
+            "name": "ctl00$ContentPlace$TYPE",
+            "type": "input",
+            "text": "ctl00$ContentPlace$TYPE",
+            "value": "rdb_t2"
+        },
+        {
+            "name": "ctl00$ContentPlace$ddl_zone",
+            "type": "select",
+            "option": [
+                {
+                    "text": "เขตกรุงเทพมหานคร",
+                    "value": "00"
+                },
+                {
+                    "text": "เขต0-1สุพรรณบุรี",
+                    "value": "01"
+                },
+                {
+                    "text": "เขต0-2ราชบุรี",
+                    "value": "02"
+                },
+                {
+                    "text": "เขต0-3นครปฐม",
+                    "value": "03"
+                },
+                {
+                    "text": "เขต0-4สระบุรี",
+                    "value": "04"
+                },
+                {
+                    "text": "เขต0-5ชัยนาท",
+                    "value": "05"
+                },
+                {
+                    "text": "เขต0-6เพชรบุรี",
+                    "value": "06"
+                },
+                {
+                    "text": "เขต0-7กาญจนบุรี",
+                    "value": "07"
+                },
+                {
+                    "text": "เขต1-1เชียงใหม่",
+                    "value": "11"
+                },
+                {
+                    "text": "เขต1-2ลำปาง",
+                    "value": "12"
+                },
+                {
+                    "text": "เขต1-3แพร่",
+                    "value": "13"
+                },
+                {
+                    "text": "เขต1-4พิษณุโลก",
+                    "value": "14"
+                },
+                {
+                    "text": "เขต1-5นครสวรรค์",
+                    "value": "15"
+                },
+                {
+                    "text": "เขต1-6กำแพงเพชร",
+                    "value": "16"
+                },
+                {
+                    "text": "เขต1-7เชียงราย",
+                    "value": "17"
+                },
+                {
+                    "text": "เขต1-8พิจิตร",
+                    "value": "18"
+                },
+                {
+                    "text": "เขต2-1ขอนแก่น",
+                    "value": "21"
+                },
+                {
+                    "text": "เขต2-2อุดรธานี",
+                    "value": "22"
+                },
+                {
+                    "text": "เขต2-3สกลนคร",
+                    "value": "23"
+                },
+                {
+                    "text": "เขต2-4อุบลราชธานี",
+                    "value": "24"
+                },
+                {
+                    "text": "เขต2-5สุรินทร์",
+                    "value": "25"
+                },
+                {
+                    "text": "เขต2-6นครราชสีมา",
+                    "value": "26"
+                },
+                {
+                    "text": "เขต2-7ร้อยเอ็ด",
+                    "value": "27"
+                },
+                {
+                    "text": "เขต2-8เลย",
+                    "value": "28"
+                },
+                {
+                    "text": "เขต3-1สุราษฎร์ธานี",
+                    "value": "31"
+                },
+                {
+                    "text": "เขต3-2ชุมพร",
+                    "value": "32"
+                },
+                {
+                    "text": "เขต3-3ภูเก็ต",
+                    "value": "33"
+                },
+                {
+                    "text": "เขต3-4สงขลา",
+                    "value": "34"
+                },
+                {
+                    "text": "เขต3-5ยะลา",
+                    "value": "35"
+                },
+                {
+                    "text": "เขต3-6กระบี่",
+                    "value": "36"
+                },
+                {
+                    "text": "เขต4-1ชลบุรี",
+                    "value": "41"
+                },
+                {
+                    "text": "เขต4-2จันทบุรี",
+                    "value": "42"
+                },
+                {
+                    "text": "เขต4-3ปราจีนบุรี",
+                    "value": "43"
+                },
+                {
+                    "text": "เขตกรุงเทพมหานคร",
+                    "value": "44"
+                },
+                {
+                    "text": "-",
+                    "value": "99"
+                }
+            ]
+        },
+        {
+            "name": "ctl00$ContentPlace$ddl_province",
+            "type": "select",
+            "option": [
+                {
+                    "text": "--=แสดงทั้งหมด",
+                    "value": "-1"
+                },
+                {
+                    "text": "กรุงเทพมหานคร",
+                    "value": "10"
+                },
+                {
+                    "text": "สมุทรปราการ",
+                    "value": "11"
+                },
+                {
+                    "text": "นนทบุรี",
+                    "value": "12"
+                },
+                {
+                    "text": "ปทุมธานี",
+                    "value": "13"
+                }
+            ]
+        }
+    ],
+    "submit": [
+        {
+            "name": "ctl00$ContentPlace$bt_search",
+            "type": "input",
+            "text": "ctl00$ContentPlace$bt_search",
+            "value": "ค้นหาข้อมูล"
+        }
+    ]
+}

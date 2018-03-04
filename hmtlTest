@@ -1,0 +1,417 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=7,IE=8,IE=9" /><title>
+	�ӹѡ��觵ǧ�Ѵ �����ä������
+</title>
+    <style type="text/css">
+        <!
+        -- body
+        {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        -- ></style>
+
+    <script src="highslide/highslide-full.js" type="text/javascript"></script>
+
+    <link href="highslide/highslide.css" rel="stylesheet" type="text/css" /><link href="StyleSheet/YahooGridView.css" rel="stylesheet" type="text/css" /><link href="StyleSheet/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <script src="Jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <script src="Jquery/jquery-1.10.0.min.js" type="text/javascript"></script>
+
+    <script src="Jquery/jQueryRotate.2.2.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        hs.graphicsDir = 'highslide/graphics/';
+        hs.outlineType = 'rounded-white';
+
+    </script>
+
+    <script type="text/javascript">
+        var t = parent;
+        function keyDownNumber() {
+            var key;
+            if (navigator.appName == 'Microsoft Internet Explorer')
+                key = event.keyCode; else key = event.which
+            if (!(key >= 48 && key <= 57) && key != 8 && key != 36 && key != 37) {
+                event.returnValue = false;
+            }
+        }
+
+        function keyDownNumberDot() {
+            var key;
+            if (navigator.appName == 'Microsoft Internet Explorer')
+                key = event.keyCode; else key = event.which
+            if (!(key >= 48 && key <= 57) && key != 8 && key != 46 && key != 36 && key != 37) {
+                event.returnValue = false;
+            }
+        }
+
+        // �ѧ���蹵�Ǩ�ͺ����Թ��˹� (100)
+        function IsNumeric(obj) {
+            if (parseFloat(obj.value) > 100) {
+                alert('�������ö��͡�������Թ 100 ��');
+                obj.value = "";
+            }
+        }
+
+        function openHs2(page) {
+            return hs.htmlExpand(null, { contentId: 'highslide2', outlineType: 'rounded-white', objectType: 'iframe', align: 'right', width: 455, hieght: 290, src: page });
+        }
+
+        //window.unload = confirmExit;
+
+        //        window.onbeforeunload = confirmExit;
+        //        function confirmExit() {
+        //            //alert("confirm exit is being called");
+        //            return 'confirm exit is being called';
+        //        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+        function condition(t) {
+            if (!confirm('�س��ͧ����͡�ҡ�к�?')) {
+                window.open('', '_self', '');
+                window.close();
+            }
+            else {
+                if (t == 1) { window.location.assign("default.aspx") }
+                if (t == 2) { window.location.assign("default.aspx") }
+            }
+        }
+
+    </script>
+
+    
+    <link href="/WebResource.axd?d=OmFDTvnkPOKKEA88YAYsSRgfjGIKOJovB_7JYCMWVs9Jw_61GcCGZAms-s-mFmtFOZEPi3XNfFLRCvau1we9Zr9pOu9rAVyScseGis-eTqixOnZaqSqhmfNFasn0jXZufwZeteO150whUFx39KbaUUhvT4OGW4RZ6KgdDcOyWBQ1&amp;t=634231115780000000" type="text/css" rel="stylesheet" /></head>
+<body bgcolor="#B7C9D8" onload="MM_preloadImages('images/b1_2.png','images/b2_2.png','images/b3_2.png','images/inner/bt1_2.png','images/inner/bt2_2.png','images/inner/bt3_2.png','images/inner/bt4_2.png')">
+    <form name="aspnetForm" method="post" action="./CBWM_Expire.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwODc2MjQ2NjMPZBYCZg9kFgICAw9kFgICAw9kFgJmD2QWCAIDDw8WAh4EVGV4dAVkPGZvbnQgY29sb3I9J3doaXRlJz48Yj7guIjguLPguJnguKfguJnguJvguKPguLDguIrguLLguIrguJnguJfguLXguYjguYDguILguYnguLLguIrguKEgOiA8L2I+PC9mb250PmRkAgUPDxYCHwAF5wE8aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvMC5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvMC5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvMC5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvNC5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvMC5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvMS5wbmcnLz48aW1nIHNyYz0nSW1hZ2VzL2NvdW50ZXIvNy5wbmcnLz5kZAIJDxYCHgdWaXNpYmxlZ2QCDQ9kFgYCAQ8QDxYGHg5EYXRhVmFsdWVGaWVsZAUIWm9uZUNvZGUeDURhdGFUZXh0RmllbGQFCFpvbmVOYW1lHgtfIURhdGFCb3VuZGdkEBUjMeC5gOC4guC4lSDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMs4LmA4LiC4LiVIDAtMSDguKrguLjguJ7guKPguKPguJPguJrguLjguKPguLUj4LmA4LiC4LiVIDAtMiDguKPguLLguIrguJrguLjguKPguLUg4LmA4LiC4LiVIDAtMyDguJnguITguKPguJvguJDguKEj4LmA4LiC4LiVIDAtNCDguKrguKPguLDguJrguLjguKPguLUg4LmA4LiC4LiVIDAtNSDguIrguLHguKLguJnguLLguJcm4LmA4LiC4LiVIDAtNiDguYDguJ7guIrguKPguJrguLjguKPguLUp4LmA4LiC4LiVIDAtNyDguIHguLLguI3guIjguJnguJrguLjguKPguLUp4LmA4LiC4LiVIDEtMSDguYDguIrguLXguKLguIfguYPguKvguKHguYgd4LmA4LiC4LiVIDEtMiDguKXguLPguJvguLLguIca4LmA4LiC4LiVIDEtMyDguYHguJ7guKPguYgm4LmA4LiC4LiVIDEtNCDguJ7guLTguKnguJPguLjguYLguKXguIEp4LmA4LiC4LiVIDEtNSDguJnguITguKPguKrguKfguKPguKPguITguYwp4LmA4LiC4LiVIDEtNiDguIHguLPguYHguJ7guIfguYDguJ7guIrguKMm4LmA4LiC4LiVIDEtNyDguYDguIrguLXguKLguIfguKPguLLguKIg4LmA4LiC4LiVIDEtOCDguJ7guLTguIjguLTguJXguKMj4LmA4LiC4LiVIDItMSDguILguK3guJnguYHguIHguYjguJkm4LmA4LiC4LiVIDItMiDguK3guLjguJTguKPguJjguLLguJnguLUg4LmA4LiC4LiVIDItMyDguKrguIHguKXguJnguITguKMv4LmA4LiC4LiVIDItNCDguK3guLjguJrguKXguKPguLLguIrguJjguLLguJnguLUm4LmA4LiC4LiVIDItNSDguKrguLjguKPguLTguJnguJfguKPguYws4LmA4LiC4LiVIDItNiDguJnguITguKPguKPguLLguIrguKrguLXguKHguLIm4LmA4LiC4LiVIDItNyDguKPguYnguK3guKLguYDguK3guYfguJQX4LmA4LiC4LiVIDItOCDguYDguKXguKIy4LmA4LiC4LiVIDMtMSDguKrguLjguKPguLLguKnguI7guKPguYzguJjguLLguJnguLUd4LmA4LiC4LiVIDMtMiDguIrguLjguKHguJ7guKMg4LmA4LiC4LiVIDMtMyDguKDguLnguYDguIHguYfguJUd4LmA4LiC4LiVIDMtNCDguKrguIfguILguKXguLIa4LmA4LiC4LiVIDMtNSDguKLguLDguKXguLIg4LmA4LiC4LiVIDMtNiDguIHguKPguLDguJrguLXguYgg4LmA4LiC4LiVIDQtMSDguIrguKXguJrguLjguKPguLUm4LmA4LiC4LiVIDQtMiDguIjguLHguJnguJfguJrguLjguKPguLUs4LmA4LiC4LiVIDQtMyDguJvguKPguLLguIjguLXguJnguJrguLjguKPguLUx4LmA4LiC4LiVIOC4geC4o+C4uOC4h+C5gOC4l+C4nuC4oeC4q+C4suC4meC4hOC4owEtFSMCMDACMDECMDICMDMCMDQCMDUCMDYCMDcCMTECMTICMTMCMTQCMTUCMTYCMTcCMTgCMjECMjICMjMCMjQCMjUCMjYCMjcCMjgCMzECMzICMzMCMzQCMzUCMzYCNDECNDICNDMCNDQCOTkUKwMjZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAWZkAgMPEA8WAh8EZ2QQFQUmLS09IOC5geC4quC4lOC4h+C4l+C4seC5ieC4h+C4q+C4oeC4lCAn4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIeC4quC4oeC4uOC4l+C4o+C4m+C4o+C4suC4geC4suC4oxXguJnguJnguJfguJrguLjguKPguLUY4Lib4LiX4Li44Lih4LiY4Liy4LiZ4Li1FQUCLTECMTACMTECMTICMTMUKwMFZ2dnZ2cWAWZkAh8PPCsAEQIBEBYAFgAWAAwUKwAAZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAwUZY3RsMDAkQ29udGVudFBsYWNlJHJkYl90MQUZY3RsMDAkQ29udGVudFBsYWNlJHJkYl90MgUZY3RsMDAkQ29udGVudFBsYWNlJHJkYl90MgUVY3RsMDAkQ29udGVudFBsYWNlJGd2D2dkMQfZHjbvJGedELQ7rtQ0SUp6MrpBbAXJ3wTr53UyglE=" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"th-TH","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"�","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"Infinity","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"?","NativeDigits":["�","�","�","�","�","�","�","�","�","�"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402275599999)\/","AlgorithmType":1,"Eras":[1],"TwoDigitYearMax":2572,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"d MMMM yyyy H:mm:ss","LongDatePattern":"d MMMM yyyy","LongTimePattern":"H:mm:ss","MonthDayPattern":"dd MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"d/M/yyyy","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["��.","�.","�.","�.","��.","�.","�."],"ShortestDayNames":["�","�","�","�","�","�","�"],"DayNames":["�ҷԵ��","�ѹ���","�ѧ���","�ظ","����ʺ��","�ء��","�����"],"AbbreviatedMonthNames":["�.�.","�.�.","��.�.","��.�.","�.�.","��.�.","�.�.","�.�.","�.�.","�.�.","�.�.","�.�.",""],"MonthNames":["���Ҥ�","����Ҿѹ��","�չҤ�","����¹","����Ҥ�","�Զع�¹","�á�Ҥ�","�ԧ�Ҥ�","�ѹ��¹","���Ҥ�","��Ȩԡ�¹","�ѹ�Ҥ�",""],"IsReadOnly":true,"NativeCalendarName":"�ط��ѡ�Ҫ","AbbreviatedMonthGenitiveNames":["�.�.","�.�.","��.�.","��.�.","�.�.","��.�.","�.�.","�.�.","�.�.","�.�.","�.�.","�.�.",""],"MonthGenitiveNames":["���Ҥ�","����Ҿѹ��","�չҤ�","����¹","����Ҥ�","�Զع�¹","�á�Ҥ�","�ԧ�Ҥ�","�ѹ��¹","���Ҥ�","��Ȩԡ�¹","�ѹ�Ҥ�",""]},"eras":[1,"�.�.",null,-543]};//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=TqH0MQ4E077wWLGW9gEyP8QdeHPGeqULb8B4E8eY1OQFrV-od7qqcuLCnrZvSnunxENhyPLoj0TOrs51LCsFavGqCdvnz0K--w9v0ulM-WyhYfqkrBsA0puQfW7JRz8wluDQrBgp5oAx-77AfttdYjQqTEkJvf_EzRtpjVAyAADwcX8z_-lyjQYsF-5BjIzr0&amp;t=247db424" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=01xMfnpr-JNXBBhvVzQcs1DXuslSYwqnHPxnGETrQYs5s43qTlnLYIj7jZTginSFKUbwGyF0tLkddPoEPuZ3DCy2O04PQba0Y8uj0hyw5Ga6GO6IsUfTFOR6tTHHolGQwhrv_J8i9qe6mol7cIBWg2jOtx1ARvMhvZle4BAGrSE1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=lqDZndPJOfMkRBXlguKn4lTra0toZI2IdRjvlhaWjmmTATW1gTsGmhO3r84_YiuFcR6xXa-JMUPVxpBS46qWZ4tgAmqcstx8DCk2mSRN0IPAG3LFKcniJnqDbqspA5fbARhd8UxYA8CAdJyNQZfyRo2-WYWaMBUVJJ_AvZRsZr41&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=AGDl2Mr5fdKic3iVwN1Wzhv7VtWUR8bRqLWTIY_g57Fu3SP6bMp2aF-ch4nBZxilTnYVQVDTAkYL2HFu41OrxKb0P4ogj_CIc3jhxzaM8Zw1Nc0WqiTdwg0rot1GFWqV_VXuTFtlsprqDJtu3wv1Wuuf9zQVrDGaRp0KX_pWWdg1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=-7QsHSLMRxudJWNQw6kVSdm2MOToNsQw3ixfBpL2u5DDzoG0EsLUJcmOyMEBfUjAzygF9lGLn19Tuqj7XyLioMHuHPtOaDxMV1PzNlQQWGyyKBQLjNHi9_IgUyTxA6TA8Wm5qkw77-mxy-Z17UdMw-TSe7Y2L7xuZ7fDcNY7V1c1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=u6GgRxFzl2dwztV80mFEMWX8lSgdkMCW_o8Y9O1e6aff3gcsgz-35BSozCH7A9phgKrnS6TtMCIAkaNcWJ1BCJ7iTuVl3Guoctim3UEVAuaCE0aDV6CvjL_bhdv0hBOEoQ8G94eAuevX_nOjKH4E0vaSyIu2vr_HDIVLY72ZY_I1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=6KADLolBY4qCakkK7526rhfs12OXTbqrAOtFoHWijphjDjTlUfMggMouFyIp4mzSDY2YpTrghvF_jkr22Oy2ZFypO-bChZBfWmLgpaR17JM5P0oh1f8Po9ZP39MecMYJbD6TnnPCjKFY_iuPJeA9btveftLnkhOOL3YO-yw6wow1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DFeJ7Fygs79fo7ruDBy5VPi6YMHW-jw7hVaeqVF0bRqGcJTJOjZ-UOQPPD8PIb8iBJMu_uZ0fGTzDvJhr-9dMTUq8083WnfRJYzWZwvfrb4t8IBSflYierjzqgUlorxN7hT7geI60NgI_ejGtMt9-yGsovhXHtpp1F5sC6D2mcE1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aeT2uRobOdyI8cykmPZAfG9t8ETkHK8PPw8OcwHx3T3M-JH3T-zdM3j71QJsJUMTH9gbrQtLKbWLFaBWINb3y_9Pybqrk5arC6S6Xmw5y0UYV88dG64NiPWM7KTy9_HuMsJOuwLSRIwyWVzu4udlVa5ugqfOtivyfe6ALgb30Us1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Ilri_mEEbcgAZz7En2nYgEGRa00tRRsPIgSUp_uMMA-kUoXh5gcb3fj7ku_4QDIo42lbP7Lk1BovRbmh1RlWqzz3BIpTdlUlj15nlQyvm_LiX3ryHi5V_0rFGv0I1S-MzH128SFXtpMhEMxoPwkLVUWslTe7JcYGVZ0-hlhJZ5U1&amp;t=ffffffffbc0ab4cc" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="17CDA3BE" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADBv3l1XjZ1lUOPTj3qjUbnaQJU3xpWGdhIn+T+57flC9a6osPXiKjCh9FLEcdEJc3T5qsV6ugDgR7UwiEnVFG3msHK3DlTwJnrrl3X7Z9zKu7nn0DmUpxqOEdSuEq/AnCyYd+x3W92m6jJBUxhM7WHibjyqORXClyOoFmZD3XbgxhymKE7HJVV2UUeKV57e7YxNybaiVGWu0pFEo7v+Ymd2OnNeOIbrlkGMPz7QYvui9fA00Q/p/OHlWeDyR5quNkeBUtzbYahh8S09InicCuCLXkWJzeC3bI3uzDjnmXL4Iqw4LEf2/N+SHOCaPqfffLUmXYIr6n6oVgdcl+Zp1pxlx6gVablL5iZDG0vR7jvSEhhIcbjdQH/Pby5dEbAeNdLjA+UOPyR21Vq3EcII95yHk2YfYLUG6uYWY4Txi1P6SUcvJ4WHy+LDN3eP4tnMXWGv8RCCZBj4Q3HGTBZx2M29bskTnoQBtmaPdXEl6kbJrYRxnxDqINwPRKD6SqRGEcrz2Y2zcNV2K9ygDxfI+M2EAHRLByLtycE7bkrszd4D7oDzHAxFQY5QZr9UPbzN4o/eOp2El1iIuI2hjh9y66Ed7GlsPAHeIMCMBhMPT7vT3Gxen8uWlGFkGy0rDjKrJ4Kp1k3XrmEQn3mMC7iNIt4HgH4JobrDvVWQW9UhrygmofO+Qigv0JdxQIonYJbcGHxkL7qOjnTAdTzb9RDfcnGc23qZ4wPLcKwZ5y8TPtcxsHVsfCKYOfKYHNon2oD55o+j71X1ormu4oLzYr11ssV1PZsrGhEne4gQmWaXkH8Nne/7TM7it+bPbVcs2dSkfgILTiJivTyNdubS42tzy/DZMUy1qrDnNyB+330t/G0Ta0ISRWrFvVnsK+IBUDhIo9HbCLVBENdFoe+fR8HGEAK0tiV3J7tL+NL99wKUano/fi4j8Lp1ijVCDwvn8SGGmaukrlIGeWYK8SrkQ42HnMm+aZrn5+yd7hbNTAcgmt8vbom3oK7Htmmv4GRZH3Y7IYh7LcLWOaHPz/wuRjNKS//XMpJu6NH7yVcZdF5Ka0DSBw==" />
+    
+    <div id="ctl00_UpdatePanel1">
+	
+            <div id="ctl00_UpdateProgress1" style="display:none;">
+		
+                    <img id="center_img" src="Images/Loading.gif" />
+                    <div id="center_div">
+                    </div>
+                
+	</div>
+            <div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="27">
+                            <img src="images/inner/inner_01.png" width="27" height="40" />
+                        </td>
+                        <td rowspan="3" valign="top">
+                            <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/b3_2.png',1)">
+                            </a><a href="#"></a>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="227">
+                                        <img src="images/inner/inner_02.png" width="227" height="40" />
+                                    </td>
+                                    <td background="images/inner/inner_03.png">
+                                        <div align="right">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span id="ctl00_lb_text"><font color='white'><b>�ӹǹ��ЪҪ������Ҫ� : </b></font></span>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl00_lb_counter"><img src='Images/counter/0.png'/><img src='Images/counter/0.png'/><img src='Images/counter/0.png'/><img src='Images/counter/4.png'/><img src='Images/counter/0.png'/><img src='Images/counter/1.png'/><img src='Images/counter/7.png'/></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/inner/inner_14.png" width="227" height="118" />
+                                    </td>
+                                    <td align="right" background="images/inner/inner_15.png">
+                                        <table width="75%" border="0" cellspacing="0" cellpadding="0">
+                                            
+                                            <tr id="ctl00_tr_person">
+		<td width="118" align="center">
+                                                </td>
+		<td width="118" align="center">
+                                                    <a href="default.aspx" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image151','','images/inner/bt5_2.png',1)">
+                                                        <img src="images/inner/bt5.png" name="Image151" width="85" height="118" border="0"
+                                                            id="Image151" /></a><a href="default.html"></a>
+                                                </td>
+		<td width="118" align="center">
+                                                    <a href="CBWM_Expire.aspx" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image61','','images/inner/bt2_2.png',1)">
+                                                        <img src="images/inner/bt2.png" name="Image61" width="126" height="118" border="0"
+                                                            id="Image61" /></a>
+                                                </td>
+		<td width="118" align="center">
+                                                    <a href="CBWM_GuestSurvey.aspx" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71','','images/inner/bt3_2.png',1)">
+                                                        <img src="images/inner/bt3.png" name="Image71" width="117" height="118" border="0"
+                                                            id="Image71" /></a>
+                                                </td>
+		<td width="118" align="center">
+                                                    <a href="#" onclick="condition(2)" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image81','','images/inner/bt4_2.png',1)">
+                                                        <img src="images/inner/bt4.png" name="Image81" width="100" height="118" border="0"
+                                                            id="Img81" /></a>
+                                                </td>
+	</tr>
+	
+                                            
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="4" colspan="2" background="images/inner/inner_25.png">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="27" background="images/inner/inner_01.png">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="118" background="images/inner/inner_15.png" bgcolor="#B7C9D8">
+                            &nbsp;
+                        </td>
+                        <td background="images/inner/inner_15.png">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" background="images/inner/inner_25.png" bgcolor="#B7C9D8">
+                            <img src="images/inner/inner_25.png" width="27" height="4" />
+                        </td>
+                        <td background="images/inner/inner_25.png">
+                            <img src="images/inner/inner_25.png" width="27" height="4" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#B7C9D8">
+                            &nbsp;
+                        </td>
+                        <td style="background-color: #FFFFFF;" height="440" valign="top">
+                            
+    <div class="fc_block">
+    <table width="100%" bgcolor="#EDEFF4">
+                    <tr>
+                        <td colspan="3" Height="30">&nbsp;&nbsp;&nbsp;&nbsp;<u><b>��Ǩ�ͺ�ѹ������ؤ��Ѻ�ͧ</b></u></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td>
+                        ࢵ��鹷�� :
+                    </td>
+                    <td>
+                        <select name="ctl00$ContentPlace$ddl_zone" id="ctl00_ContentPlace_ddl_zone">
+		<option selected="selected" value="00">ࢵ ��ا෾��ҹ��</option>
+		<option value="01">ࢵ 0-1 �ؾ�ó����</option>
+		<option value="02">ࢵ 0-2 �Ҫ����</option>
+		<option value="03">ࢵ 0-3 ��û��</option>
+		<option value="04">ࢵ 0-4 ��к���</option>
+		<option value="05">ࢵ 0-5 ��¹ҷ</option>
+		<option value="06">ࢵ 0-6 ྪú���</option>
+		<option value="07">ࢵ 0-7 �ҭ������</option>
+		<option value="11">ࢵ 1-1 ��§����</option>
+		<option value="12">ࢵ 1-2 �ӻҧ</option>
+		<option value="13">ࢵ 1-3 ���</option>
+		<option value="14">ࢵ 1-4 ��ɳ��š</option>
+		<option value="15">ࢵ 1-5 ������ä�</option>
+		<option value="16">ࢵ 1-6 ��ᾧྪ�</option>
+		<option value="17">ࢵ 1-7 ��§���</option>
+		<option value="18">ࢵ 1-8 �ԨԵ�</option>
+		<option value="21">ࢵ 2-1 �͹��</option>
+		<option value="22">ࢵ 2-2 �شøҹ�</option>
+		<option value="23">ࢵ 2-3 ʡŹ��</option>
+		<option value="24">ࢵ 2-4 �غ��Ҫ�ҹ�</option>
+		<option value="25">ࢵ 2-5 ���Թ���</option>
+		<option value="26">ࢵ 2-6 ����Ҫ����</option>
+		<option value="27">ࢵ 2-7 �������</option>
+		<option value="28">ࢵ 2-8 ���</option>
+		<option value="31">ࢵ 3-1 ����ɮ��ҹ�</option>
+		<option value="32">ࢵ 3-2 �����</option>
+		<option value="33">ࢵ 3-3 ����</option>
+		<option value="34">ࢵ 3-4 ʧ���</option>
+		<option value="35">ࢵ 3-5 ����</option>
+		<option value="36">ࢵ 3-6 ��к��</option>
+		<option value="41">ࢵ 4-1 �ź���</option>
+		<option value="42">ࢵ 4-2 �ѹ�����</option>
+		<option value="43">ࢵ 4-3 ��Ҩչ����</option>
+		<option value="44">ࢵ ��ا෾��ҹ��</option>
+		<option value="99">-</option>
+
+	</select>
+                    </td>
+                 </tr>
+                <tr >
+                    <td></td>
+                    <td>�ѧ��Ѵ :</td>
+                    <td colspan="2">
+                        <select name="ctl00$ContentPlace$ddl_province" id="ctl00_ContentPlace_ddl_province">
+		<option selected="selected" value="-1">--= �ʴ������� </option>
+		<option value="10">��ا෾��ҹ��</option>
+		<option value="11">��طû�ҡ��</option>
+		<option value="12">�������</option>
+		<option value="13">�����ҹ�</option>
+
+	</select>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td width = "5%"></td>
+                    <td width = "15%">�ѹ����������</td>
+                    <td width = "80%" valign = "top" height = "30px">
+                        <input name="ctl00$ContentPlace$tbStartDate" type="text" id="ctl00_ContentPlace_tbStartDate" />
+                        <img id="ctl00_ContentPlace_img_importdate1" src="../Images/icon-calendar.gif" border="0" />
+                        
+                        -
+                        <input name="ctl00$ContentPlace$tbEndDate" type="text" id="ctl00_ContentPlace_tbEndDate" />
+                        <img id="ctl00_ContentPlace_img_importdate2" src="../Images/icon-calendar.gif" border="0" />
+                        
+                    </td>                    <td width = "20%"></td>
+                 </tr>
+                <tr >
+                    <td></td>
+                    <td>�������ҵ��Ѵ :</td>
+                    <td colspan="2">
+                    <input id="ctl00_ContentPlace_rdb_t1" type="radio" name="ctl00$ContentPlace$TYPE" value="rdb_t1" checked="checked" /><label for="ctl00_ContentPlace_rdb_t1">�ҵ��Ѵʶҹպ�ԡ��</label>
+                    <input id="ctl00_ContentPlace_rdb_t2" type="radio" name="ctl00$ContentPlace$TYPE" value="rdb_t2" /><label for="ctl00_ContentPlace_rdb_t2">����ͧ���ö¹��</label>
+                    </td>
+                 </tr>
+                <tr >
+                    <td></td>
+                    <td>�Ţ���㺤Ӣ� :</td>
+                    <td colspan="2">
+                    <input name="ctl00$ContentPlace$tb_sheetno" type="text" id="ctl00_ContentPlace_tb_sheetno" />
+                    </td>
+                 </tr>
+                <tr >
+                    <td></td>
+                    <td>�����蹤Ӣ� :</td>
+                    <td colspan="2">
+                    <input name="ctl00$ContentPlace$tb_name" type="text" id="ctl00_ContentPlace_tb_name" />
+                    </td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td></td>
+                    <td>
+                    <input type="submit" name="ctl00$ContentPlace$bt_search" value="���Ң�����" id="ctl00_ContentPlace_bt_search" class="fc_button1" />
+                    </td>
+                 </tr>
+    </table>
+    </div>
+    <div class="fc_desc">
+    <div align="right"><span id="ctl00_ContentPlace_lb"><b></b></span></div>
+        <div class="grid">
+        <div class="rounded">
+                <div class="top-outer">
+                    <div class="top-inner"><div class="top">
+                        <table width = "100%">
+                            <tr>
+                                <td align = "left">
+                                    <h2><span id="ctl00_ContentPlace_lb_count">�ӹǹ 0 ��¡��</span></h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        <div>
+
+	</div>
+   </div> 
+  </div>
+  </div>
+
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td bgcolor="#637D94">
+                            &nbsp;
+                        </td>
+                        <td height="95" align="center" bgcolor="#637D94">
+                            <font style='color:White;font-size:32px;font-family:DSN LardPhrao'>�ӹѡ�ӡѺ��е�Ǩ�ͺ����ͧ�������ӹѡ��觵ǧ�Ѵ</font>&nbsp;<font style='color:White;font-size:23px;font-family:DSN LardPhrao'>(�����ä������&nbsp;��з�ǧ�ҳԪ��)</font><br />
+                            <font style='color:White;font-size:20px;font-family:DSN LardPhrao'>44/100 ����������1 �Ӻźҧ����� ��������ͧ �ѧ��Ѵ������� 11000 ��. 0-2547-4345 ῡ�� 0-2547-4346 E-mail : chartreea@dit.go.th</font>
+                        </td>
+                        <td bgcolor="#637D94">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlace_img_importdate1"),"format":"dd/MM/yyyy","id":"ctl00_ContentPlace_ce1"}, null, null, $get("ctl00_ContentPlace_tbStartDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlace_img_importdate2"),"format":"dd/MM/yyyy","id":"ctl00_ContentPlace_ce2"}, null, null, $get("ctl00_ContentPlace_tbEndDate"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

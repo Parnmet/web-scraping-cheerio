@@ -1,0 +1,95 @@
+{
+    "webScraping": [
+        {
+            "id": 1,
+            "name": "organicDoa",
+            "description": "ระบบตรวจรับรองแหล่งผลิตพืชอินทรีย์ กรมวิชาการเกษตร",
+            "url": "http://organic.doa.go.th/login/report_search",
+            "charset": "utf-8"
+        },
+        {
+            "id": 2,
+            "name": "productionDoae1",
+            "description": "ระบบสารสนเทศการผลิตทางด้านเกษตร ข้าว พืชไร่ พืชผัก ไม้ดอกไม้ประดับ สมุนไพรและเครื่องเทศ(รต.01)",
+            "url": "http://production.doae.go.th/report/report_main2.php?report_type=1",
+            "charset": "utf-8"
+        },
+        {
+            "id": 3,
+            "name": "productionDoae2",
+            "description": "ระบบสารสนเทศการผลิตทางด้านเกษตร ไม้ผล ไม้ยืนต้น สมุนไพรและเครื่องเทศ(รต.02)",
+            "url": "http://production.doae.go.th/report/report_main2.php?report_type=2",
+            "charset": "utf-8"
+        },
+        {
+            "id": 4,
+            "name": "gapDoa",
+            "description": "สำนักพัฒนาระบบและรับรองมาตรฐานสินค้าพืช",
+            "url": "http://gap.doa.go.th/searchgap",
+            "charset": "utf-8"
+        },
+        {
+            "id": 5,
+            "name": "oae1",
+            "description": "ราคาสินค้าเกษตร สำนักงานเศรษฐกิจการเกษตร",
+            "url": "http://www.oae.go.th/oae_report/price/price_by_day.php",
+            "charset": "utf-8"
+        },
+        {
+            "id": 5,
+            "name": "oae2",
+            "description": "สถิติการนำเข้าสินค้าที่สำคัญ สำนักงานเศรษฐกิจการเกษตร",
+            "url": "http://www.oae.go.th/oae_report/export_import/import.php",
+            "charset": "utf-8"
+        },
+        {
+            "id": 6,
+            "name": "oae3",
+            "description": "สถิติการส่งออกสินค้าที่สำคัญ สำนักงานเศรษฐกิจการเกษตร",
+            "url": "http://www.oae.go.th/oae_report/export_import/export.php",
+            "charset": "utf-8"
+        },
+        {
+            "id": 7,
+            "name": "cbwmDit1",
+            "description": "ตรวจสอบวันหมดอายุคำรับรอง(สำหรับประชาชน) ระบบตรวจสอบการให้บริการงานชั่งตวงวัด กระทรวงพาณิชย์",
+            "url": "http://cbwm.dit.go.th/service/CBWM_Expire.aspx",
+            "charset": "windows-874"
+        },
+        {
+            "id": 8,
+            "name": "cbwmDit2",
+            "description": "ตรวจสอบวันนัดตรวจให้คำรับรอง (สำหรับผู้ประกอบการ) ระบบตรวจสอบการให้บริการงานชั่งตวงวัด กระทรวงพาณิชย์",
+            "url": "http://cbwm.dit.go.th/service/CBWM_Service.aspx",
+            "charset": "windows-874"
+        },
+        {
+            "id": 9,
+            "name": "cbwmDit3",
+            "description": "เครื่องหมายเฉพาะตัว (สำหรับผู้ประกอบการ) ระบบตรวจสอบการให้บริการงานชั่งตวงวัด กระทรวงพาณิชย์",
+            "url": "http://cbwm.dit.go.th/service/CBWM_Symbol.aspx",
+            "charset": "windows-874"
+        },
+        {
+            "id": 10,
+            "name": "cbwmDit4",
+            "description": "ตรวจสอบวันหมดอายุคำรับรอง (สำหรับผู้ประกอบการ) ระบบตรวจสอบการให้บริการงานชั่งตวงวัด กระทรวงพาณิชย์",
+            "url": "http://cbwm.dit.go.th/service/CBWM_MachineExpire.aspx",
+            "charset": "windows-874"
+        },
+        {
+            "id": 11,
+            "name": "socialNesdb",
+            "description": "ทำเนียบวุฒิอาสา สำนักงานคณะกรรมการพัฒนาการเศรษฐกิจและสังคมแห่งชาติ",
+            "url": "http://social.nesdb.go.th/SeniorVolunteer/",
+            "charset": "utf-8"
+        },
+        {
+            "id": 12,
+            "name": "drugNhso",
+            "description": "สืบค้นและบริหารจัดการรหัสยา ระบบการบริหารจัดการรหัสยามาตรฐาน",
+            "url": "http://drug.nhso.go.th/DrugCode/searchDrug.zul",
+            "charset": "utf-8"
+        }
+    ]
+}

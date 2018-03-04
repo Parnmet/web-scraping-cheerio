@@ -12,6 +12,17 @@ cheerioTableparser($);
 //For html file.
 var data = $('table.table').parsetable(true, true, true);
 
+function prepareData(data){
+    for (i = 0; i < data.length; i++) {
+        for (j = 0; j < data[0].length; j++) {
+                if (data[0][j] != "" && data[i][j] == "") {
+                    data[i][j] = "-"
+                }
+        }
+    }
+    return data
+}
+
 function convertRowToColumn(data){
     var data_temp = []
     for (i = 0; i < data[0].length; i++) {
@@ -23,10 +34,24 @@ function convertRowToColumn(data){
     return data_temp
 }
 
-data2 = convertRowToColumn(data)
+function fillEmptyCell(data) {
+    for (i = 0; i < data.length; i++) {
+        for (j = 0; j < data[0].length; j++) {
+                if (data[i][j + 1] == "") {
+                    data[i][j + 1] = data[i][j]
+                }
+        }
+    }
+    return data
+}
 
-// var csv = require('fast-csv')
-// var ws = fs.createWriteStream('my2.csv')
-// csv.write(data2, {
-//     headers: true
-// }).pipe(ws)
+data = prepareData(data)
+data = fillEmptyCell(data)
+data = convertRowToColumn(data)
+
+
+var csv = require('fast-csv')
+var ws = fs.createWriteStream('my2.csv')
+csv.write(data, {
+    headers: true
+}).pipe(ws)
